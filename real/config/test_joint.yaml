@@ -1,0 +1,26 @@
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/test_joint_A.npy
+  label_path: ./data/test_label_A.pkl
+  debug: False
+
+# model
+model: model.agcn.Model
+model_args:
+  num_class: 155
+  num_point: 17
+  num_person: 2
+  graph: graph.this_graph.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+
+# test
+phase: test
+device: [0,1,2,3]
+test_batch_size: 16
+weights: ./runs/agcn_joint-41-43134.pt
+work_dir: ./work_dir/agcn_test_joint
+model_saved_name: ./runs/agcn_test_joint
+save_score: True
