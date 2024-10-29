@@ -1,5 +1,5 @@
-work_dir: ./work_dir/tdgcn_V2
-model_saved_name: ./runs/tdgcn_V2
+work_dir: ./work_dir/tdgcn_V2_B
+model_saved_name: ./runs/tdgcn_V2_B
 # feeder
 feeder: feeders.feeder.Feeder
 train_feeder_args:
