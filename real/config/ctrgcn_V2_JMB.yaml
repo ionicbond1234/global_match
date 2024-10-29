@@ -1,0 +1,42 @@
+work_dir: ./work_dir/ctrgcn_V2_JMB
+model_saved_name: ./runs/ctrgcn_V2_JMB
+# feeder
+feeder: feeders.feeder.Feeder
+train_feeder_args:
+  data_path: ./data/train_joint_bone.npy
+  label_path: ./data/train_label.pkl
+  debug: False
+  random_choose: False
+  random_shift: False
+  random_move: False
+  window_size: -1
+  normalization: False
+
+test_feeder_args:
+  data_path: ./data/test_joint_bone_A.npy
+  label_path: ./data/test_label_A.pkl
+
+
+# model
+model: model.ctrgcn_xyz.Model
+model_args:
+  num_class: 155
+  num_point: 17
+  num_person: 2
+  graph: graph.this_graph.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+#optim
+weight_decay: 0.0004
+base_lr: 0.1
+step: [35, 55]
+warm_up_epoch: 5
+
+# training
+device: [1]
+batch_size: 64
+test_batch_size: 256
+num_epoch: 65
+nesterov: True
+save_interval: 1

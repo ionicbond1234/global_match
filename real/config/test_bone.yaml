@@ -1,0 +1,26 @@
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/test_bone_A.npy
+  label_path: ./data/test_label_A.pkl
+  debug: False
+
+# model
+model: model.tdgcn_xy.Model
+model_args:
+  num_class: 155
+  num_point: 17
+  num_person: 2
+  graph: graph.this_graph.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+
+# test
+phase: test
+device: [1]
+test_batch_size: 16
+weights: ./runs/tdgcn_V2-45-11776.pt
+work_dir: ./work_dir/tdgcn_test_bone
+model_saved_name: ./runs/tdgcn_test_bone
+save_score: True
