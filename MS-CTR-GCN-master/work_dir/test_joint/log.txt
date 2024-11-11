@@ -1,0 +1,9 @@
+[ Wed Nov  6 21:42:07 2024 ] using warm up, epoch: 0
+[ Wed Nov  6 21:48:49 2024 ] using warm up, epoch: 0
+[ Wed Nov  6 21:49:41 2024 ] using warm up, epoch: 0
+[ Wed Nov  6 21:51:36 2024 ] Load weights from /data/ices/ionicbond/MS-CTR-GCN-master/work_dir/ctrgcn/runs-39-10179.pt.
+[ Wed Nov  6 21:51:37 2024 ] using warm up, epoch: 0
+[ Wed Nov  6 21:53:00 2024 ] Load weights from /data/ices/ionicbond/MS-CTR-GCN-master/work_dir/ctrgcn/runs-39-10179.pt.
+[ Wed Nov  6 21:53:02 2024 ] using warm up, epoch: 0
+[ Wed Nov  6 21:53:47 2024 ] Load weights from /data/ices/ionicbond/MS-CTR-GCN-master/work_dir/ctrgcn/runs-39-10179.pt.
+[ Wed Nov  6 21:53:48 2024 ] using warm up, epoch: 0

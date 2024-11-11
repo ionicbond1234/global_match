@@ -1,0 +1,2 @@
+[ Wed Nov  6 23:45:52 2024 ] Load weights from /data/ices/ionicbond/MS-CTR-GCN-master/work_dir/ctrgcn_bone_longtail/runs-60-15660.pt.
+[ Wed Nov  6 23:45:53 2024 ] using warm up, epoch: 5

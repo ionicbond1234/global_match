@@ -1,0 +1,69 @@
+# command line: main.py --config /data/ices/ionicbond/MS-CTR-GCN-master/config/uav/motion.yaml --work-dir work_dir/motion --device 2
+
+base_lr: 0.1
+batch_size: 64
+config: /data/ices/ionicbond/MS-CTR-GCN-master/config/uav/motion.yaml
+device:
+- 2
+eval_interval: 5
+feeder: feeders.feeder_uav.Feeder
+ignore_weights: []
+log_interval: 100
+lr_decay_rate: 0.1
+min_lr: 0.0001
+model: model.ctrgcn.Model
+model_args:
+  graph: graph.uav_human.Graph
+  graph_args:
+    labeling_mode: spatial
+  num_class: 155
+  num_person: 2
+  num_point: 17
+model_saved_name: ''
+nesterov: true
+num_epoch: 65
+num_worker: 32
+optimizer: SGD
+phase: train
+print_log: true
+save_epoch: 30
+save_interval: 1
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 35
+- 55
+test_batch_size: 128
+test_feeder_args:
+  bone: false
+  data_path: /data/ices/ionicbond/MS-CTR-GCN-master/data/uav/v1/test_joint.npy
+  debug: false
+  label_path: /data/ices/ionicbond/MS-CTR-GCN-master/data/uav/v1/test_label.pkl
+  normalization: true
+  p_interval:
+  - 0.95
+  vel: true
+  window_size: 120
+train_feeder_args:
+  bone: false
+  data_path: /data/ices/ionicbond/MS-CTR-GCN-master/data/uav/v1/train_joint.npy
+  debug: false
+  label_path: /data/ices/ionicbond/MS-CTR-GCN-master/data/uav/v1/train_label.pkl
+  normalization: true
+  p_interval:
+  - 0.5
+  - 1
+  random_choose: false
+  random_move: false
+  random_rot: true
+  random_shift: false
+  vel: true
+  window_size: 120
+warm_up_epoch: 5
+weight_decay: 0.0004
+weights: null
+work_dir: work_dir/motion
