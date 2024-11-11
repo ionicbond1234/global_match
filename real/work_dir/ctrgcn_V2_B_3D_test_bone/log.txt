@@ -1,7 +1,0 @@
-[ Fri Oct 25 09:11:54 2024 ] Load weights from /data/yangzhao/xinye/GlobalAI/real/real/runs/ctrgcn_V2_B_3D-38-9984.pt.
-[ Fri Oct 25 09:12:27 2024 ] Load weights from /data/yangzhao/xinye/GlobalAI/real/real/runs/ctrgcn_V2_B_3D-38-9984.pt.
-[ Fri Oct 25 09:12:27 2024 ] using warm up, epoch: 0
-[ Fri Oct 25 09:15:18 2024 ] Load weights from /data/yangzhao/xinye/GlobalAI/real/real/runs/ctrgcn_V2_B_3D-38-9984.pt.
-[ Fri Oct 25 09:15:19 2024 ] using warm up, epoch: 0
-[ Fri Oct 25 09:16:00 2024 ] Load weights from /data/yangzhao/xinye/GlobalAI/real/real/runs/ctrgcn_V2_B_3D-38-9984.pt.
-[ Fri Oct 25 09:16:00 2024 ] using warm up, epoch: 0

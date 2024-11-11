@@ -1,3 +1,0 @@
-[ Sat Oct 26 09:58:17 2024 ] Load weights from /data/yangzhao/xinye/GlobalAI/real/real/runs/tdgcn_V2-45-10240.pt.
-[ Sat Oct 26 09:59:34 2024 ] Load weights from /data/yangzhao/xinye/GlobalAI/real/real/runs/tdgcn_V2-45-11776.pt.
-[ Sat Oct 26 09:59:35 2024 ] using warm up, epoch: 0
